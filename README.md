@@ -1,6 +1,7 @@
 # crcpp
+
 A testing and development package for communicating between C and C++
----
+
 
 This R function calls a `C` function
 
@@ -26,6 +27,7 @@ SEXP c_ask_for_list (){
 
 ```
 
+
 ```cpp
 #include <Rcpp.h>
 using namespace Rcpp;
@@ -37,3 +39,19 @@ extern "C" SEXP rcpp_create_list() {
 	return l;
 }
 ```
+
+---
+
+Independently the codes work
+
+```r
+library(crcpp)
+crcpp::r_ask_for_list()
+[[1]]
+NULL
+
+crcpp::rcpp_create_list()
+[[1]]
+[1] "foo"
+```
+
