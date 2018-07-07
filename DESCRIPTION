@@ -1,7 +1,7 @@
 Package: crcpp
 Type: Package
 Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
+Version: 1.0.1
 Date: 2018-07-05
 Author: Your Name
 Maintainer: Your Name <your@email.com>
@@ -10,3 +10,5 @@ License: GPL (>= 2)
 Imports: Rcpp (>= 0.12.17)
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-07-06 00:35:21 UTC; edd
