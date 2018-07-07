@@ -7,8 +7,3 @@ rcpp_create_list <- function() {
     .Call('_crcpp_rcpp_create_list', PACKAGE = 'crcpp')
 }
 
-#' @export
-rcpp_dont_return_list <- function() {
-    invisible(.Call('_crcpp_rcpp_dont_return_list', PACKAGE = 'crcpp'))
-}
-

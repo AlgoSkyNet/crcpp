@@ -5,17 +5,8 @@ using namespace Rcpp;
 //' @export
 // [[Rcpp::export]]
 SEXP rcpp_create_list() {
-	Rcpp::List l(1);
+	Rcpp::List l(2);
 	l[0] = "foo";
+	l[1] = "bar";
 	return l;
 }
-
-
-//' @export
-// [[Rcpp::export]]
-void rcpp_dont_return_list() {
-  Rcpp::List l = rcpp_create_list();
-	Rcpp::StringVector sv = l[0];
-	Rcpp::Rcout << "first element: " << sv << std::endl;
-}
-
