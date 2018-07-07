@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-SEXP rcpp_create_list();
+SEXP _crcpp_rcpp_create_list();
 
 #ifdef __cplusplus
 }

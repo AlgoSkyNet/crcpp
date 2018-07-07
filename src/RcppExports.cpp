@@ -6,7 +6,7 @@
 using namespace Rcpp;
 
 // rcpp_create_list
-extern "C" SEXP rcpp_create_list();
+SEXP rcpp_create_list();
 RcppExport SEXP _crcpp_rcpp_create_list() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
@@ -16,11 +16,11 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP c_ask_for_list();
+RcppExport SEXP c_ask_for_list(SEXP);
 
 static const R_CallMethodDef CallEntries[] = {
     {"_crcpp_rcpp_create_list", (DL_FUNC) &_crcpp_rcpp_create_list, 0},
-    {"c_ask_for_list",          (DL_FUNC) &c_ask_for_list,          0},
+    {"c_ask_for_list",          (DL_FUNC) &c_ask_for_list,          1},
     {NULL, NULL, 0}
 };
 
