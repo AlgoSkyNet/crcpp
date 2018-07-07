@@ -16,11 +16,11 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP c_ask_for_list(SEXP);
+RcppExport SEXP c_ask_for_list();
 
 static const R_CallMethodDef CallEntries[] = {
     {"_crcpp_rcpp_create_list", (DL_FUNC) &_crcpp_rcpp_create_list, 0},
-    {"c_ask_for_list",          (DL_FUNC) &c_ask_for_list,          1},
+    {"c_ask_for_list",          (DL_FUNC) &c_ask_for_list,          0},
     {NULL, NULL, 0}
 };
 

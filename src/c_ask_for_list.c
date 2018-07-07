@@ -2,5 +2,5 @@
 
 SEXP c_ask_for_list () {
 	SEXP l = _crcpp_rcpp_create_list();          // Call the C++ function to create the list
-	return(l);
+	return l;
 }
